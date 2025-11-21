@@ -1,0 +1,41 @@
+[gd_scene load_steps=4 format=3 uid="uid://c3ldt4t5kl2vi"]
+
+[ext_resource type="Texture2D" uid="uid://imrf8nbi4uy4" path="res://Assets/Green.png" id="1_b8lop"]
+[ext_resource type="Script" uid="uid://bfwxk4at7d2h6" path="res://menu_de_tipo.gd" id="1_bornh"]
+[ext_resource type="Texture2D" uid="uid://bb2rloitsk8xf" path="res://Assets/levelup.png" id="2_bornh"]
+
+[node name="MenuDeTipo" type="Node2D"]
+script = ExtResource("1_bornh")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+texture_filter = 1
+offset_left = -1.0
+offset_top = -1.0
+offset_right = 1152.0
+offset_bottom = 643.0
+texture = ExtResource("1_b8lop")
+stretch_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 339.0
+offset_top = 176.0
+offset_right = 750.0
+offset_bottom = 324.0
+texture = ExtResource("2_bornh")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 472.0
+offset_top = 356.0
+offset_right = 615.0
+offset_bottom = 410.0
+text = "Nivel 1"
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 471.0
+offset_top = 433.0
+offset_right = 614.0
+offset_bottom = 487.0
+text = "Nivel 2"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button2_pressed"]

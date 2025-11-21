@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://btt3iu0dh4n72"]
+
+[ext_resource type="Texture2D" uid="uid://d01adnv0tkn1i" path="res://Assets/End (Idle).png" id="1_wtcfe"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(1103, -47)
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+texture_filter = 1
+position = Vector2(6, 0)
+rotation = 0.436332
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D"]
+texture_filter = 1
+texture = ExtResource("1_wtcfe")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="RigidBody2D"]
+polygon = PackedVector2Array(11, -12, 15, -11, 22, -9, 22, 5, 15, 7, 10, 9, 3, 9, 5, 15, 4, 19, 12, 21, 16, 25, 16, 33, -17, 33, -17, 24, -12, 24, -12, 21, -4, 20, -5, 15, -3, 9, -12, 10, -15, 7, -22, 6, -22, -8, -16, -10, -14, -12)

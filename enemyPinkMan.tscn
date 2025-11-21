@@ -1,0 +1,118 @@
+[gd_scene load_steps=17 format=3 uid="uid://doawmgjaco0bu"]
+
+[ext_resource type="Script" uid="uid://bakfjhfb5pnt5" path="res://enemy_pink_man.gd" id="1_hdq3m"]
+[ext_resource type="Texture2D" uid="uid://dv7cjif3eu5t3" path="res://Assets/Pink Man/Run (32x32).png" id="2_8vldi"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3qh82"]
+atlas = ExtResource("2_8vldi")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vem8v"]
+atlas = ExtResource("2_8vldi")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lkngd"]
+atlas = ExtResource("2_8vldi")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rxc0f"]
+atlas = ExtResource("2_8vldi")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wh11m"]
+atlas = ExtResource("2_8vldi")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_whsnv"]
+atlas = ExtResource("2_8vldi")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fvmgl"]
+atlas = ExtResource("2_8vldi")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1merj"]
+atlas = ExtResource("2_8vldi")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jcam8"]
+atlas = ExtResource("2_8vldi")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5kgjf"]
+atlas = ExtResource("2_8vldi")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oas7e"]
+atlas = ExtResource("2_8vldi")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gny27"]
+atlas = ExtResource("2_8vldi")
+region = Rect2(352, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_24chr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3qh82")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vem8v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lkngd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rxc0f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wh11m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_whsnv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fvmgl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1merj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jcam8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5kgjf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oas7e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gny27")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5aykk"]
+size = Vector2(20, 23)
+
+[node name="EnemyPinkMan" type="CharacterBody2D"]
+scale = Vector2(3, 3)
+up_direction = Vector2(0, 1)
+script = ExtResource("1_hdq3m")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_24chr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1.5)
+shape = SubResource("RectangleShape2D_5aykk")
+
+[node name="Right" type="RayCast2D" parent="."]
+target_position = Vector2(20, 0)
+
+[node name="Left" type="RayCast2D" parent="."]
+target_position = Vector2(-20, 0)

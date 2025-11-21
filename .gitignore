@@ -1,0 +1,18 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# Directorio de importaciones automáticas
+.import/
+
+# Archivos de cache
+*.tmp
+*.cache
+
+# Archivos de exportación
+export_presets.cfg
+
+# Carpetas de builds
+build/
+bin/
+
