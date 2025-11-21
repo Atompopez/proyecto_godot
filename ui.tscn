@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bp3n8l3736du1" path="res://Assets/Cherries.png" id="1_y4yjw"]
 [ext_resource type="Texture2D" uid="uid://c1vidpag1y4s0" path="res://Assets/FrameCharacter back.png" id="2_waa4j"]
-[ext_resource type="Texture2D" uid="uid://cc4mec0kn2ns5" path="res://Assets/Head.png" id="3_ok7cu"]
+[ext_resource type="Texture2D" uid="uid://die6nt7jv2dbf" path="res://Assets/Fox Sprite Sheet_2.png" id="3_ok7cu"]
 [ext_resource type="Texture2D" uid="uid://cykf640w24o8t" path="res://Assets/FrameCharacter front.png" id="4_irxef"]
 [ext_resource type="Texture2D" uid="uid://c168yk3aqj5sc" path="res://Assets/Marco.png" id="5_e2l4f"]
 [ext_resource type="Texture2D" uid="uid://dp4850orrafiq" path="res://Assets/Gradient.png" id="6_n5rqp"]
@@ -181,8 +181,8 @@ texture = ExtResource("2_waa4j")
 expand_mode = 1
 
 [node name="Sprite2D" type="Sprite2D" parent="Panel/TextureRect2"]
-position = Vector2(21.5, 37.999992)
-scale = Vector2(1.7187502, 1.8750001)
+position = Vector2(26.367188, 27.593748)
+scale = Vector2(2.141984, 2.7067301)
 texture = ExtResource("3_ok7cu")
 
 [node name="TextureRect2" type="TextureRect" parent="Panel/TextureRect2"]

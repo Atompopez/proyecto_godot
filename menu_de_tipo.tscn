@@ -31,6 +31,7 @@ offset_bottom = 410.0
 text = "Nivel 1"
 
 [node name="Button2" type="Button" parent="."]
+visible = false
 offset_left = 471.0
 offset_top = 433.0
 offset_right = 614.0
